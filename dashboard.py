@@ -67,7 +67,7 @@ st.header('Bike Sharing Dashboard :sparkles:')
 
 #Visualisasi data pengguna sepeda pada tahun 2011
 st.subheader('Distribution of Bicycle Users in 2011')
-fig, ax = plt.subplots(figsize=(16, 8))
+fig, ax = plt.subplots(figsize=(19, 8))
 nama_bulan = {
     1: 'Januari',
     2: 'Februari',
@@ -96,7 +96,7 @@ st.pyplot(fig)
 
 #Visualisasi data pengguna sepeda pada tahun 2012
 st.subheader('Distribution of Bicycle Users in 2012')
-fig, ax = plt.subplots(figsize=(16, 8))
+fig, ax = plt.subplots(figsize=(19, 8))
 group_by_2012.index = group_by_2012.index.map(nama_bulan)
 ax.plot(
     group_by_2012.index,
